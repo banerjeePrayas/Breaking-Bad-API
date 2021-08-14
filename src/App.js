@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/Header'
-import BlogList from './components/BlogList'
-import BlogIdScreen from './screens/BlogIdScreen'
+import HomeScreen from './screens/HomeScreen'
+import CharacterIdScreen from './screens/CharacterIdScreen'
 
 const App = () => {
   return (
@@ -10,8 +10,8 @@ const App = () => {
       <Header />
 
         <div className="App">
-          <Route path='/' component={BlogList} exact />
-          <Route path='/:id' component={BlogIdScreen} exact />
+          <Route path='/' component={HomeScreen} exact />
+          <Route path='/:id' component={CharacterIdScreen} exact />
         </div>
     </Router>
   );
